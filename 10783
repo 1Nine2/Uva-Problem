@@ -1,0 +1,28 @@
+   import java.util*
+   public static void main(String[] args) {
+        int n;
+        Scanner Lee = new Scanner(System.in);
+        n = Lee.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Case "+ Integer.toString(i)+": ");
+            int a,b;
+            int suma_impares=0;
+            int k=0;
+            List<Integer> Lista= new ArrayList<>();
+            a=Lee.nextInt();
+            b=Lee.nextInt();
+            for (int j = a; j <=b; j++) {
+                Lista.add(j);
+            }
+            while (k<Lista.size()) {
+                if (Lista.get(k)%2!=0) {
+                    suma_impares += Lista.get(k);
+                    
+                }
+              k=k+1;
+            }
+            System.out.println(suma_impares);
+            }
+        
+    }
+}
