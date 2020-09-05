@@ -1,0 +1,35 @@
+import java.util.*;
+
+/**
+ *
+ * @author 1Nine2
+ */
+public class Main{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main1(String[] args) {
+        // TODO code application logic here
+        int n;
+        Scanner Lee = new Scanner(System.in);
+        n = Lee.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Case "+ Integer.toString(i)+": ");
+            int a,b,c;
+            a=Lee.nextInt();
+            b=Lee.nextInt();
+            c=Lee.nextInt();
+            if ((a<=b && b<=c)||(c<=b && a<=b)) {
+                System.out.println(b);
+               }
+            else if((b<=a && a<=c)||(c<=a && a<=b))
+            {
+                System.out.println(a);
+            }
+            else
+            {System.out.println(c);}
+            
+        }
+    }
+        }
